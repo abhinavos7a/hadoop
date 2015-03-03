@@ -9,11 +9,22 @@ import java.io.IOException;
 /**
  * Hello world!
  *
+ * This is a simple program to use pail API's to write and read the schema.
+ *
+ * Create a jar
+ *
+ * mvn clean compile assembly:single
+ *
+ * Transfer the jar to the grid gateway and then run
+ *
+ * hadoop jar *.jar com.abhin.learning.App
+ *
  */
 public class App 
 {
     public static void main( String[] args ) throws IOException{
         writeLogin();
+        readLogin();
     }
 
 
@@ -43,4 +54,5 @@ public class App
 
         os.close();
     }
+
 }
